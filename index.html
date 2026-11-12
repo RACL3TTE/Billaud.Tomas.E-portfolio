@@ -1,220 +1,442 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Portfolio - Billaud Tomas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tomas Billaud · E-portfolio</title>
+    <meta name="description" content="E-portfolio de Tomas Billaud, élève ingénieur ENSEEIHT, Sciences du Numérique, filière HPC & Big Data.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400&family=B612+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
+<a class="skip" href="#main"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
 
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#home" data-target="#home">Home</a></li>
-            <li><a href="#engineering" data-target="#engineering">Engineering Courses</a></li>
-            <li><a href="#mobility" data-target="#mobility">Mobility</a></li>
-            <li><a href="#civic" data-target="#civic">Civic Engagement</a></li>
-            <li><a href="#activities" data-target="#activities">Sports & Activities</a></li>
-            <li><a href="#career" data-target="#career">Career Development</a></li>
-        </ul>
+<header class="nav">
+    <div class="wrap nav-inner">
+        <a class="brand" href="#top">Tomas Billaud</a>
+        <nav aria-label="Sections">
+            <ul>
+                <li><a href="#about"><span lang="fr">À propos</span><span lang="en">About</span></a></li>
+                <li><a href="#skills"><span lang="fr">Compétences</span><span lang="en">Skills</span></a></li>
+                <li><a href="#projects"><span lang="fr">Projets</span><span lang="en">Projects</span></a></li>
+                <li><a href="#path"><span lang="fr">Parcours</span><span lang="en">Path</span></a></li>
+                <li><a href="#gap"><span lang="fr">Césure</span><span lang="en">Gap year</span></a></li>
+                <li><a href="#models"><span lang="fr">Inspirations</span><span lang="en">Role models</span></a></li>
+                <li><a href="#engagement"><span lang="fr">Engagements</span><span lang="en">Involvement</span></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="lang-toggle" type="button" aria-label="Switch language / Changer de langue">
+            <span class="lang-fr">FR</span> / <span class="lang-en">EN</span>
+        </button>
     </div>
-</nav>
+</header>
 
-<div class="container">
-    
-    <section id="home">
-        <h2 id="typing-title"></h2>
-        
-        <div class="card"> 
-            <h3>Welcome</h3>
-            <p>
-                I’m a Computer Science student at ENSEEIHT. My goal is to apply my skills in data analysis and AI to one of the most demanding and interesting environments I know of : competitive motorsport.
-            </p>
-            <p>
-                This portfolio follows my journey, from experimenting with reinforcement learning models to preparing an international mobility project that connects with my goals as an engineer.
-            </p>
+<main id="main">
 
-        </div>
-    </section>
-
-    <section id="engineering">
-        <h2>My Engineering Courses</h2>
-        
-        <div class="card hidden">
-            <h3>Project: Reinforcement Learning AI for "Snake"</h3>
-            <ul>
-                <li><strong>Context:</strong> As a personal side project, I trained a simple AI agent to play and master the classic game “Snake.”</li>
-                <li><strong>My Role:</strong> I started from a given model from a tutorial but focused on the real engineering challenge: <em>configuring, training, and tuning the model</em> rather than rewriting it from scratch.</li>
-                <li><strong>Key Learnings & Reflection:</strong> I managed several training cycles, tested different parameters, and studied how each configuration affected the performance. This experience strengthened my interest not only in AI theory but also in the process of improving a system.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="mobility">
-        <h2>International Mobility</h2>
-        
-        <div class="card hidden">
-            <h3>Mobility Goals: Ireland & The Netherlands would be my first choice</h3>
-            <p>I aim to study in a major European tech hub to develop my skills. After learning of the agreements, there seems to be good opportunities for my field in <strong>Ireland</strong> and <strong>The Netherlands</strong>.</p>
-            <p>The most suitable options are through <strong>"Free Mover"</strong> programs to get a master in my third year in one of those universities. Moreover, I really appreciate those countries and the opportunites that I could get by studying in another country for a whole year.</p>
-
-            <hr style="border-color: var(--border-color); margin: 20px 0;">
-
-            <h3>TU Delft (Netherlands)</h3>
-            <p>
-                <strong>Why:</strong> TU Delft, is world-class in engineering, applied mathematics, and AI. I would target their <em>Computer Science & Engineering</em> or <em>Applied Mathematics</em> departments, both completly aligned with my goals.
-            </p>
-
-            <h3>Dublin City University (Ireland)</h3>
-            <p>
-                <strong>Why:</strong> DCU has an agreement that covers all departments. Its School of Computing is particularly strong in Data Science and AI which a good option for the kind of work I aim to pursue.
-            </p>
-
-        </div>
-    </section>
-
-    <section id="civic">
-        <h2>Civic Engagement</h2>
-        <div class="card hidden">
-            <h3>Awareness & Action</h3>
-            <p>My civic engagement would be about finding a concrete and personal way to take part in positive action.</p>
-            
-            <hr style="border-color: var(--border-color); margin: 20px 0;">
-            
-            <h4>Awareness Activities:</h4>
-            <ul>
-                <li><strong>The Climate Fresk:</strong> A collaborative workshop that helped me understand the science behind climate change and its interconnections.</li>
-                <li><strong>"Carbon Guessr" E-Shopping Workshop:</strong> A hands-on activity linking digital technology to environmental impact.</li>
-                <li><strong>Women in Scientific History Presentation:</strong> A session that emphasized the value of diversity and inclusion in STEM fields.</li>
-            </ul>
-
-            <hr style="border-color: var(--border-color); margin: 20px 0;">
-
-            <h3>My Engagement Plan: Volunteer Track Marshal</h3>
-            <p>
-                For my 40-hour engagement project, I plan to train and volunteer as a <strong>track marshal</strong> during motorsport events.
-            </p>
-            <ul>
-                <li><strong>Motivation:</strong> It combines my passion for motorsports with a desire to contribute meaningfully by ensuring the safety of the drivers and anyone around the track.</li>
-                <li><strong>Skills:</strong> The role requires responsibility, quick decision-making under pressure, and teamwork which are soft skills that are key to engineering work.</li>
-                <li><strong>Next Step:</strong> I’m currently reaching out to organizations like the FFSA to learn more about the certification process and confirm this plan with the Soft Skills Center.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="activities">
-        <h2>Sports & Other Activities</h2>
-        <div class="card hidden">
-            <h3>Discipline & Endurance</h3>
-            <p>Physical and mental discipline has always been a part of my life. Sports help me stay balanced, focused, and determined and which help me in my studies and my daily life.</p>
-            
-            <ul>
-                <li><strong>Past Disciplines:</strong> I did eight years of <em>Judo</em> which taught me respect and technical precision. And four years of <em>Parkour</em> helped me develop creativity and risk assessment skills as well as daring to take risks and trusting your capacities.</li>
-                <li><strong>Current Focus:</strong> I’m now training for a <em>marathon</em>, seeing it as both a physical goal and a personal project in tracking progress and building mental resilience.</li>
-            </ul>
-            
-            <hr style="border-color: var(--border-color); margin: 20px 0;">
-
-            <h3>Personal Interests</h3>
-            <ul>
-                <li><strong>Motorcycling:</strong> As a rider, I’ve learned real-world risk management and situational awareness.</li>
-                <li><strong>Motorsport:</strong> My passion for racing drives my interest in data, performance, and engineering precision. It is the link between what I study and what inspires me most.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="career">
-        <h2>My Career Development</h2>
-        
-        <div class="career-grid">
-            <div class="career-info card hidden">
-                <h3>My Resumés (CVs)</h3>
-                <ul class="file-links">
-                    <li><a href="tomas-anglais.pdf" target="_blank" class="button">Download my CV (English)</a></li>
-                    <li><a href="Tomas.pdf" target="_blank" class="button">Download my CV (French)</a></li>
-                </ul>
+    <!-- HERO -->
+    <section class="hero wrap" id="top">
+        <div class="hero-text">
+            <p class="eyebrow">ENSEEIHT · Sciences du Numérique · HPC &amp; Big Data</p>
+            <h1>Tomas<br>Billaud</h1>
+            <div class="dim" aria-hidden="true"><span><span lang="fr">IA · HPC · sport auto</span><span lang="en">AI · HPC · motorsport</span></span></div>
+            <p class="lead" lang="fr">J'apprends à entraîner et déployer des modèles d'intelligence artificielle sur des infrastructures de calcul haute performance, avec un objectif : les mettre au service de la performance en sport automobile.</p>
+            <p class="lead" lang="en">I am learning to train and deploy artificial intelligence models on high-performance computing infrastructure, with one goal: putting them to work for performance in motorsport.</p>
+            <div class="actions">
+                <a class="btn btn-primary" href="CV_Billaud_Tomas.pdf" target="_blank" rel="noopener"><span lang="fr">Voir mon CV</span><span lang="en">View my CV (FR)</span></a>
+                <a class="btn" href="https://www.linkedin.com/in/tomas-billaud-04683a405/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="link-arrow" href="#contact"><span lang="fr">Me contacter</span><span lang="en">Get in touch</span> →</a>
             </div>
+        </div>
+        <figure class="hero-photo">
+            <img src="photo.jpg" alt="Portrait de Tomas Billaud" width="900" height="1117">
+            <span class="callout c1" aria-hidden="true">① CPGE PT*</span>
+            <span class="callout c2" aria-hidden="true">② N7 · SN</span>
+        </figure>
+    </section>
 
-            <div class="career-video card hidden">
-                <h3>My Elevator Pitch (UVP)</h3>
-                <div class="video-placeholder">
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/BypmSqNq50k?si=eCwD4eM_6JPWcOKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+    <!-- 01 ABOUT -->
+    <section class="block wrap reveal" id="about">
+        <header class="block-head">
+            <span class="num">A</span>
+            <h2><span lang="fr">À propos</span><span lang="en">About</span></h2>
+        </header>
+        <div class="block-body two-col">
+            <p lang="fr">Élève ingénieur en 2<sup>e</sup> année de Sciences du Numérique à l'ENSEEIHT (Toulouse INP), filière <strong>HPC &amp; Big Data</strong>, après une CPGE PTSI/PT*. Ce qui m'attire dans l'IA, ce n'est pas seulement le modèle, c'est tout ce qu'il faut pour le rendre utile : des données propres, une puissance de calcul bien exploitée et des résultats obtenus assez vite pour servir à une décision.</p>
+            <p lang="en">Second-year engineering student in Computer Science at ENSEEIHT (Toulouse INP), majoring in <strong>HPC &amp; Big Data</strong>, after two years of French preparatory classes (PTSI/PT*). What draws me to AI is not only the model, but everything it takes to make it useful: clean data, well-used computing power, and results delivered fast enough to support a decision.</p>
+            <p lang="fr">Le sport automobile pousse cette logique à l'extrême : des centaines de capteurs, des simulations relancées pendant la course, des choix faits en quelques secondes. C'est le terrain où je veux appliquer ce que j'apprends. J'y ai fait un premier pas avec la Formula Student, et je prépare une année de césure dans ce milieu.</p>
+            <p lang="en">Motorsport pushes this logic to the extreme: hundreds of sensors, simulations re-run during the race, decisions made in seconds. That is where I want to apply what I learn. I took a first step with Formula Student, and I am preparing a gap year in this field.</p>
+        </div>
+    </section>
+
+    <!-- 02 SKILLS -->
+    <section class="block wrap reveal" id="skills">
+        <header class="block-head">
+            <span class="num">B</span>
+            <h2><span lang="fr">Compétences</span><span lang="en">Skills</span></h2>
+        </header>
+        <div class="block-body">
+            <p class="skills-head" aria-hidden="true"><span>Rep.</span><span lang="fr">Désignation</span><span lang="en">Item</span><span lang="fr">Contenu</span><span lang="en">Details</span></p>
+            <dl class="skills">
+                <div>
+                    <dt><span lang="fr">IA &amp; données</span><span lang="en">AI &amp; data</span></dt>
+                    <dd lang="fr">Python, apprentissage par renforcement (projet personnel), traitement de données expérimentales, simulation numérique</dd>
+                    <dd lang="en">Python, reinforcement learning (personal project), experimental data processing, numerical simulation</dd>
                 </div>
-            </div>
+                <div>
+                    <dt>HPC &amp; Big Data</dt>
+                    <dd lang="fr">Programmation parallèle, calcul sur GPU, traitement de données massives <em class="tag">en cours · 2A</em></dd>
+                    <dd lang="en">Parallel programming, GPU computing, large-scale data processing <em class="tag">in progress · 2nd year</em></dd>
+                </div>
+                <div>
+                    <dt><span lang="fr">Programmation</span><span lang="en">Programming</span></dt>
+                    <dd class="mono">Python · C · Java · Ada · Matlab · HTML/CSS</dd>
+                </div>
+                <div>
+                    <dt><span lang="fr">Systèmes &amp; réseaux</span><span lang="en">Systems &amp; networks</span></dt>
+                    <dd lang="fr">Processus Unix, architecture des processeurs, conception de réseaux, structures de données performantes</dd>
+                    <dd lang="en">Unix processes, processor architecture, network design, efficient data structures</dd>
+                </div>
+                <div>
+                    <dt><span lang="fr">Langues</span><span lang="en">Languages</span></dt>
+                    <dd lang="fr">Français (langue maternelle) · Anglais (courant, Dual Diploma américain) · Espagnol (B1/B2)</dd>
+                    <dd lang="en">French (native) · English (fluent, US Dual Diploma) · Spanish (B1/B2)</dd>
+                </div>
+            </dl>
         </div>
-
- <div class="card hidden">
-                <h3>My Professional Inspiration (Role Models)</h3>
-                <ol>
-                    <li>
-                        <strong>Role Model 1: Hannah Schmitz (Principal Strategy Engineer, Red Bull Racing)</strong>
-                        <p>
-                            <strong>Analysis:</strong> She is the benchmark for data-driven strategy. Her role involves analyzing massive volumes of data to make decisions for the strategy in the race. She used to be a modelling and simulation engineer then she got into the analystical and statistical work that is of a Strategy Engineer. https://www.linkedin.com/in/hannah-schmitz-363911103/?originalSubdomain=uk
-                        </p>
-                    </li>
-                    
-                    <li>
-                        <strong>Role Model 2 : Bastien Clergue (ERS Control System Engineer, Alpine F1 Team)</strong>
-                        <p>
-                            <strong>Analysis:</strong> As an ENSEEIHT alumnus, his career path is a concrete proof that my goal of getting into motorsport is achievable. His role in ERS (Energy Recovery System) control is at the heart of my Computer Science skillset, it involves real-time data analysis. https://www.linkedin.com/in/bastien-clergue-n7/?locale=en_US
-                        </p>
-                    </li>
-                    
-                    <li>
-                        <strong>Role Model 3 : Jude Hunt (Data Scientist, McLaren Racing)</strong>
-                        <p>
-                            <strong>Analysis:</strong> His profile inspires me in what I could do in the future. He used to work in R&D in AI and transitioned to data Science in F1. He works on the predictive models and simulations that optimize vehicle performance. https://www.linkedin.com/in/jude-hunt/?originalSubdomain=uk
-                        </s
-                    </li>
-                </ol>
-            </div>
-            
-            <div class="card hidden">
-                <h3>My Aligned International Mobility Projects</h3>
-                <p>My mobility plan is designed to acquire the specific skills demonstrated by my role models.</p>
-                <ol>
-                    <li>
-                        <strong>Project 1: TU Delft (Netherlands) - "Free Mover"</strong>
-                        <p>
-                            <strong>Focus:</strong> Applied Mathematics, AI & Simulation Engineering.
-                        </p>
-                        <p>
-                            <strong>Alignment:</strong> This project aligns perfectly with "Jude Hunt" and "Bastien Clergue". TU Delft is world-class in engineering, simulation, and applied AI. This experience would provide the technical skills to work in motorsport as a Data Sciencist.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Project 2: Dublin City University (Ireland) - "Paying Agreement"</strong>
-                        <p>
-                            <strong>Focus:</strong> School of Computing (Data Science, AI).
-                        </p>
-                        <p>
-                            <strong>Alignment:</strong> This project aligns directly with "Hannah Schmitz". Dublin is a "Big Data" hub. An exchange at DCU would provide skills in computer science that are directly transferable to motorsport.
-                        </p>
-                    </li>
-                    <li>
-                       <h3>Project 3 (Analysis): Cranfield University (United Kingdom)</h3>
-                <p>
-                    <strong>Alignment:</strong> Cranfield University would be my most targeted option. Cranfield is renowned for its School of Aerospace, Transport and Manufacturing, and has direct links to the F1 and motorsport valley. Enrolling in courses from their "Motorsport Engineering & Management" or "Computational and Software Techniques in Engineering" MSc would be the best option for my career goal.
-                </p>
-                    </li>
-                </ol>
-            </div>
     </section>
 
-</div>
+    <!-- 03 PROJECTS -->
+    <section class="block wrap reveal" id="projects">
+        <header class="block-head">
+            <span class="num">C</span>
+            <h2><span lang="fr">Projets</span><span lang="en">Projects</span></h2>
+        </header>
+        <div class="block-body cards">
 
-<footer>
-    <p>© 2025 Billaud Tomas - E-Portfolio ENSEEIHT-N7</p>
+            <article class="card card-current">
+                <p class="meta">2026–2027 · <span lang="fr">en cours</span><span lang="en">in progress</span></p>
+                <h3><span lang="fr">Filière HPC &amp; Big Data</span><span lang="en">HPC &amp; Big Data major</span></h3>
+                <p lang="fr">Début de la spécialisation : parallélisme, calcul sur GPU et données massives. Les projets de l'année viendront compléter cette page au fil des semestres.</p>
+                <p lang="en">Start of the major: parallelism, GPU computing and large-scale data. This year's projects will be added to this page as the semesters go on.</p>
+            </article>
+
+            <article class="card">
+                <p class="meta"><span lang="fr">Projet personnel</span><span lang="en">Personal project</span> · Python</p>
+                <h3><span lang="fr">IA par renforcement : Snake</span><span lang="en">Reinforcement learning: Snake</span></h3>
+                <p lang="fr">À partir d'un modèle issu d'un tutoriel, j'ai concentré mon travail sur la partie ingénierie : réglage des hyperparamètres, campagnes d'entraînement successives, comparaison des performances d'une configuration à l'autre.</p>
+                <p lang="en">Starting from a tutorial model, I focused on the engineering side: tuning hyperparameters, running successive training campaigns and comparing performance from one configuration to the next.</p>
+                <p class="takeaway" lang="fr">Ce que j'en retiens : un bon système dépend autant de la méthode expérimentale que du modèle.</p>
+                <p class="takeaway" lang="en">Takeaway: a good system depends as much on experimental method as on the model itself.</p>
+            </article>
+
+            <article class="card">
+                <p class="meta">TIPE · 2024–2025 · Python</p>
+                <h3><span lang="fr">Papercrete : étude thermique</span><span lang="en">Papercrete: thermal study</span></h3>
+                <p lang="fr">Étude d'un béton à base de papier, alternative écologique au béton classique. J'étais responsable de la partie thermique : traitement de données expérimentales complexes et simulation numérique en Python pour valider la cohérence des résultats physiques.</p>
+                <p lang="en">Study of a paper-based concrete, an eco-friendly alternative to standard concrete. I was in charge of the thermal part: processing complex experimental data and building a Python numerical simulation to check the consistency of the physical results.</p>
+                <p class="takeaway" lang="fr">Ce que j'en retiens : confronter mesures et modèle, et ne pas se fier à un seul des deux.</p>
+                <p class="takeaway" lang="en">Takeaway: always confront measurements with the model, and never trust just one of them.</p>
+            </article>
+
+            <article class="card card-wide">
+                <p class="meta">ENSEEIHT · 1A · 2025–2026</p>
+                <h3><span lang="fr">Les fondamentaux</span><span lang="en">The fundamentals</span></h3>
+                <ul class="plain" lang="fr">
+                    <li><strong>Routeur IPv4 et cache LRU/FIFO</strong> : comparaison des performances entre liste chaînée et arbre préfixe.</li>
+                    <li><strong>Algorithme de Dijkstra</strong> implémenté en C.</li>
+                    <li><strong>Jeu de gestion 2D</strong> structuré par composants, avec un moteur de simulation mathématique.</li>
+                    <li><strong>Minishell</strong> : interpréteur de commandes avec gestion de l'exécution des processus.</li>
+                    <li><strong>Mini-CRAPS</strong> : conception d'un processeur simple et de ses mécanismes d'exécution.</li>
+                    <li><strong>Réseaux</strong> : conception et déploiement d'une architecture réseau simulée.</li>
+                </ul>
+                <ul class="plain" lang="en">
+                    <li><strong>IPv4 router and LRU/FIFO cache</strong>: performance comparison between linked list and prefix tree.</li>
+                    <li><strong>Dijkstra's algorithm</strong> implemented in C.</li>
+                    <li><strong>2D management game</strong> built with components, including a mathematical simulation engine.</li>
+                    <li><strong>Minishell</strong>: command interpreter handling process execution.</li>
+                    <li><strong>Mini-CRAPS</strong>: design of a simple processor and its execution mechanisms.</li>
+                    <li><strong>Networks</strong>: design and deployment of a simulated network architecture.</li>
+                </ul>
+                <p class="takeaway" lang="fr">Pourquoi c'est utile pour le HPC : mémoire, processus et structures de données sont exactement là où se gagne (ou se perd) la performance d'un calcul.</p>
+                <p class="takeaway" lang="en">Why it matters for HPC: memory, processes and data structures are exactly where a computation gains (or loses) its performance.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 04 PATH -->
+    <section class="block wrap reveal" id="path">
+        <header class="block-head">
+            <span class="num">D</span>
+            <h2><span lang="fr">Parcours</span><span lang="en">Path</span></h2>
+        </header>
+        <div class="block-body">
+            <!-- Vue d'ensemble : 1 unité = 1 an depuis 2020 (le détail accessible est dans la liste ci-dessous) -->
+            <div class="gantt" aria-hidden="true">
+                <div class="g-axis"><span style="--s:0">2020</span><span style="--s:1">2021</span><span style="--s:2">2022</span><span style="--s:3">2023</span><span style="--s:4">2024</span><span style="--s:5">2025</span><span style="--s:6">2026</span><span style="--s:7">2027</span><span style="--s:8">2028</span><span style="--s:9">2029</span></div>
+                <div class="g-row"><span class="g-bar" style="--s:0;--e:3"><span lang="fr">Bac · Academica</span><span lang="en">Baccalauréat · Academica</span></span></div>
+                <div class="g-row"><span class="g-bar" style="--s:3;--e:5">CPGE PT*</span></div>
+                <div class="g-row"><span class="g-bar" style="--s:5;--e:7">ENSEEIHT 1A–2A</span><span class="g-bar g-plan" style="--s:7;--e:8"><span lang="fr">Césure</span><span lang="en">Gap year</span></span><span class="g-bar g-plan" style="--s:8;--e:9">3A</span></div>
+                <div class="g-row g-jobs"><span class="g-dot" style="--s:4.5">Mama Shelter</span><span class="g-dot" style="--s:6.45"><span lang="fr">Agroalimentaire</span><span lang="en">Food industry</span></span></div>
+            </div>
+            <ol class="timeline">
+                <li class="future">
+                    <span class="when">2027–2028</span>
+                    <div>
+                        <h3><span lang="fr">Année de césure en sport automobile</span><span lang="en">Gap year in motorsport</span></h3>
+                        <p lang="fr">Prévue : stages orientés data, simulation ou IA.</p>
+                        <p lang="en">Planned: internships in data, simulation or AI.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when"><span lang="fr">Juin–juil. 2026</span><span lang="en">Jun–Jul 2026</span></span>
+                    <div>
+                        <h3><span lang="fr">Opérateur de production, industrie agroalimentaire</span><span lang="en">Production operator, food industry</span></h3>
+                        <p lang="fr">Emploi saisonnier : approvisionnement de ligne, conditionnement, pesage, étiquetage. Rythme, rigueur et règles d'hygiène.</p>
+                        <p lang="en">Seasonal job: line supply, packaging, weighing, labelling. Pace, rigour and hygiene standards.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2025–2028</span>
+                    <div>
+                        <h3>ENSEEIHT, Toulouse INP</h3>
+                        <p lang="fr">Diplôme d'ingénieur, Sciences du Numérique. Filière HPC &amp; Big Data depuis la 2<sup>e</sup> année.</p>
+                        <p lang="en">Engineering degree in Computer Science. HPC &amp; Big Data major from 2nd year.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when"><span lang="fr">Juil. 2024</span><span lang="en">Jul 2024</span></span>
+                    <div>
+                        <h3><span lang="fr">Aide-comptable, Mama Shelter La Défense</span><span lang="en">Accounting assistant, Mama Shelter La Défense</span></h3>
+                        <p lang="fr">Après une panne du logiciel comptable : rapprochement bancaire, recherche et analyse des écarts entre les recettes enregistrées et les encaissements réels. Ma première vraie mission d'analyse de données.</p>
+                        <p lang="en">After an accounting software failure: bank reconciliation, finding and analysing gaps between recorded revenue and actual payments. My first real data analysis assignment.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2023–2025</span>
+                    <div>
+                        <h3>CPGE PTSI / PT*</h3>
+                        <p lang="fr">Lycée polyvalent de Cachan. Mathématiques, physique et sciences de l'ingénieur.</p>
+                        <p lang="en">Lycée polyvalent de Cachan. Two-year intensive programme in mathematics, physics and engineering science.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2020–2023</span>
+                    <div>
+                        <h3><span lang="fr">Baccalauréat &amp; Dual Diploma</span><span lang="en">French Baccalauréat &amp; Dual Diploma</span></h3>
+                        <p lang="fr">Lycée La Salle Les Francs Bourgeois, et en parallèle le programme Academica (High School Diploma américain, cours suivis en anglais).</p>
+                        <p lang="en">Lycée La Salle Les Francs Bourgeois, alongside the Academica programme (US High School Diploma, taught in English).</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 05 GAP YEAR -->
+    <section class="block wrap reveal" id="gap">
+        <header class="block-head">
+            <span class="num">E</span>
+            <h2><span lang="fr">Projet de césure</span><span lang="en">Gap year plan</span></h2>
+        </header>
+        <div class="block-body">
+            <p class="intro" lang="fr">Avant ma dernière année, je veux confronter mes compétences au terrain : une année de stages ou d'immersion dans le sport automobile, côté data, simulation ou IA. C'est la meilleure façon de vérifier que ce métier me correspond, et d'arriver en 3<sup>e</sup> année en sachant précisément ce que je veux approfondir.</p>
+            <p class="intro" lang="en">Before my final year, I want to test my skills in the field: a year of internships or immersion in motorsport, on the data, simulation or AI side. It is the best way to check that this career suits me, and to start my final year knowing exactly what I want to specialise in.</p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption class="sr-only"><span lang="fr">Pistes de césure</span><span lang="en">Gap year options</span></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span lang="fr">Piste</span><span lang="en">Option</span></th>
+                            <th scope="col"><span lang="fr">Mission visée</span><span lang="en">Target role</span></th>
+                            <th scope="col"><span lang="fr">Lien avec ma formation</span><span lang="en">Link to my studies</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span lang="fr">Écuries de Formule 1</span><span lang="en">Formula 1 teams</span></td>
+                            <td><span lang="fr">Data science, simulation, systèmes de contrôle</span><span lang="en">Data science, simulation, control systems</span></td>
+                            <td><span lang="fr">IA, HPC, temps réel</span><span lang="en">AI, HPC, real time</span></td>
+                        </tr>
+                        <tr>
+                            <td><span lang="fr">Endurance (WEC, Le Mans)</span><span lang="en">Endurance racing (WEC, Le Mans)</span></td>
+                            <td><span lang="fr">Analyse de télémétrie, stratégie</span><span lang="en">Telemetry analysis, strategy</span></td>
+                            <td>Big Data, data science</td>
+                        </tr>
+                        <tr>
+                            <td><span lang="fr">Motorsport Valley (Royaume-Uni)</span><span lang="en">Motorsport Valley (UK)</span></td>
+                            <td><span lang="fr">Stage à l'international</span><span lang="en">International internship</span></td>
+                            <td><span lang="fr">Ouverture internationale, anglais professionnel</span><span lang="en">International experience, professional English</span></td>
+                        </tr>
+                        <tr>
+                            <td><span lang="fr">Formule E, fournisseurs de simulation et de télémétrie</span><span lang="en">Formula E, simulation and telemetry suppliers</span></td>
+                            <td><span lang="fr">Modèles prédictifs, outils data</span><span lang="en">Predictive models, data tools</span></td>
+                            <td><span lang="fr">IA et déploiement</span><span lang="en">AI and deployment</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ol class="steps">
+                <li>
+                    <span class="mono">2026–2027</span>
+                    <p lang="fr">Candidatures et réseau pendant la 2<sup>e</sup> année, en m'appuyant sur les alumni N7 du secteur.</p>
+                    <p lang="en">Applications and networking during 2nd year, with the help of N7 alumni in the industry.</p>
+                </li>
+                <li>
+                    <span class="mono">2027–2028</span>
+                    <p lang="fr">Césure : un ou deux stages, idéalement dont un à l'étranger.</p>
+                    <p lang="en">Gap year: one or two internships, ideally including one abroad.</p>
+                </li>
+                <li>
+                    <span class="mono"><span lang="fr">Ensuite</span><span lang="en">Then</span></span>
+                    <p lang="fr">Retour en 3<sup>e</sup> année avec un projet professionnel précis.</p>
+                    <p lang="en">Back for my final year with a clear career plan.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 06 ROLE MODELS -->
+    <section class="block wrap reveal" id="models">
+        <header class="block-head">
+            <span class="num">F</span>
+            <h2><span lang="fr">Inspirations</span><span lang="en">Role models</span></h2>
+        </header>
+        <div class="block-body cards">
+            <article class="card">
+                <p class="meta">Red Bull Racing</p>
+                <h3>Hannah Schmitz</h3>
+                <p class="role">Principal Strategy Engineer</p>
+                <p lang="fr">Ancienne ingénieure modélisation et simulation, devenue la référence de la stratégie fondée sur les données : analyser des volumes massifs d'informations pour décider en pleine course.</p>
+                <p lang="en">A former modelling and simulation engineer who became the benchmark for data-driven strategy: analysing massive amounts of information to make decisions mid-race.</p>
+                <p class="takeaway" lang="fr">Ce que je retiens : la simulation mène à la décision.</p>
+                <p class="takeaway" lang="en">My takeaway: simulation leads to decisions.</p>
+                <a class="link-arrow" href="https://www.linkedin.com/in/hannah-schmitz-363911103/" target="_blank" rel="noopener">LinkedIn →</a>
+            </article>
+            <article class="card">
+                <p class="meta">Alpine F1 Team · <span lang="fr">alumni N7</span><span lang="en">N7 alumnus</span></p>
+                <h3>Bastien Clergue</h3>
+                <p class="role">ERS Control System Engineer</p>
+                <p lang="fr">Diplômé de l'ENSEEIHT, il travaille sur le contrôle du système de récupération d'énergie : des données traitées en temps réel au cœur de la performance.</p>
+                <p lang="en">An ENSEEIHT graduate working on Energy Recovery System control: real-time data processing at the heart of performance.</p>
+                <p class="takeaway" lang="fr">Ce que je retiens : le chemin depuis l'N7 existe.</p>
+                <p class="takeaway" lang="en">My takeaway: the path from N7 exists.</p>
+                <a class="link-arrow" href="https://www.linkedin.com/in/bastien-clergue-n7/" target="_blank" rel="noopener">LinkedIn →</a>
+            </article>
+            <article class="card">
+                <p class="meta">McLaren Racing</p>
+                <h3>Jude Hunt</h3>
+                <p class="role">Data Scientist</p>
+                <p lang="fr">Passé de la R&amp;D en intelligence artificielle à la data science en F1, il développe des modèles prédictifs et des simulations pour optimiser la performance de la voiture.</p>
+                <p lang="en">He moved from AI research and development to data science in F1, building predictive models and simulations to optimise car performance.</p>
+                <p class="takeaway" lang="fr">Ce que je retiens : l'IA se transpose directement en piste.</p>
+                <p class="takeaway" lang="en">My takeaway: AI transfers directly to the track.</p>
+                <a class="link-arrow" href="https://www.linkedin.com/in/jude-hunt/" target="_blank" rel="noopener">LinkedIn →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- 07 ENGAGEMENT -->
+    <section class="block wrap reveal" id="engagement">
+        <header class="block-head">
+            <span class="num">G</span>
+            <h2><span lang="fr">Engagements</span><span lang="en">Involvement</span></h2>
+        </header>
+        <div class="block-body">
+            <ul class="list-lines">
+                <li>
+                    <h3><span lang="fr">Bureau du Développement Durable de l'ENSEEIHT</span><span lang="en">ENSEEIHT Sustainability Office</span></h3>
+                    <p lang="fr">Responsable événements : organiser des actions de sensibilisation pour les élèves.</p>
+                    <p lang="en">Events manager: organising awareness activities for students.</p>
+                </li>
+                <li>
+                    <h3><span lang="fr">Ateliers de sensibilisation</span><span lang="en">Awareness workshops</span></h3>
+                    <p lang="fr">Fresque du Climat (comprendre les mécanismes du changement climatique), atelier « Carbon Guessr » (impact environnemental du numérique et de l'e-commerce), présentation sur les femmes dans l'histoire des sciences.</p>
+                    <p lang="en">Climate Fresk (understanding the mechanisms of climate change), "Carbon Guessr" workshop (environmental impact of digital technology and e-commerce), talk on women in the history of science.</p>
+                </li>
+                <li>
+                    <h3>N7RT · Formula Student <span class="tag">2025–2026</span></h3>
+                    <p lang="fr">Équipe freinage : conception du système complet, choix et dimensionnement des composants, respect du règlement et prise en compte des épreuves.</p>
+                    <p lang="en">Braking team: design of the full system, component selection and sizing, compliance with the rules and the requirements of each event.</p>
+                </li>
+                <li>
+                    <h3>Can7</h3>
+                    <p lang="fr">Membre de l'association audiovisuelle de l'école.</p>
+                    <p lang="en">Member of the school's audiovisual society.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 08 BEYOND -->
+    <section class="block wrap reveal" id="beyond">
+        <header class="block-head">
+            <span class="num">H</span>
+            <h2><span lang="fr">Au-delà du code</span><span lang="en">Beyond code</span></h2>
+        </header>
+        <div class="block-body two-col">
+            <div>
+                <h3><span lang="fr">Course à pied</span><span lang="en">Running</span></h3>
+                <p lang="fr">Le semi de Montauban en 1 h 45 et le TUT Toulouse (25,5 km) au printemps 2026, un marathon en préparation. J'aborde chaque objectif comme un projet : un plan, des mesures, des ajustements.</p>
+                <p lang="en">The Montauban half marathon in 1:45 and the TUT Toulouse (25.5 km) in spring 2026, a marathon in preparation. I treat each goal as a project: a plan, measurements, adjustments.</p>
+            </div>
+            <div>
+                <h3><span lang="fr">Judo &amp; parkour</span><span lang="en">Judo &amp; parkour</span></h3>
+                <p lang="fr">Huit ans de judo pour le respect et la précision technique, quatre ans de parkour pour la créativité et l'évaluation du risque.</p>
+                <p lang="en">Eight years of judo for respect and technical precision, four years of parkour for creativity and risk assessment.</p>
+            </div>
+            <div>
+                <h3><span lang="fr">Moto &amp; sport auto</span><span lang="en">Motorcycling &amp; motorsport</span></h3>
+                <p lang="fr">La moto m'a appris l'anticipation et la gestion du risque en conditions réelles. Le sport automobile, lui, relie ce que j'étudie à ce qui me passionne.</p>
+                <p lang="en">Riding taught me anticipation and real-world risk management. Motorsport is what links what I study to what I love.</p>
+            </div>
+            <!-- Échelle 0 → 42,195 km ; --d = distance en km -->
+            <div class="race-scale" aria-hidden="true">
+                <span class="rs-mark up left" style="--d:21.1"><b>21,1 km</b> Semi Montauban · 1:45:43</span>
+                <span class="rs-mark down" style="--d:25.5"><b>25,5 km</b> TUT Toulouse · 2:16:50</span>
+                <span class="rs-mark up left goal" style="--d:42.195"><b>42,2 km</b> Marathon · <span lang="fr">en préparation</span><span lang="en">in preparation</span></span>
+                <span class="rs-zero">0</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 09 CONTACT -->
+    <section class="block wrap reveal contact" id="contact">
+        <header class="block-head">
+            <span class="num">I</span>
+            <h2>Contact</h2>
+        </header>
+        <div class="block-body">
+            <p class="big" lang="fr">Une question, un stage, une piste de césure ? Écrivez-moi.</p>
+            <p class="big" lang="en">A question, an internship, a gap year opportunity? Drop me a line.</p>
+            <ul class="contact-list">
+                <li><span class="mono">Email</span><a href="mailto:tomasbillaud@hotmail.fr">tomasbillaud@hotmail.fr</a></li>
+                <li><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/tomas-billaud-04683a405/" target="_blank" rel="noopener">tomas-billaud</a></li>
+                <li><span class="mono">CV</span><a href="CV_Billaud_Tomas.pdf" target="_blank" rel="noopener"><span lang="fr">Télécharger (PDF)</span><span lang="en">Download (PDF, French)</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer class="wrap footer">
+    <div class="cartouche">
+        <div><small><span lang="fr">Auteur</span><span lang="en">Author</span></small>Tomas Billaud</div>
+        <div class="c-title">E-portfolio · ENSEEIHT</div>
+        <div><small>Date</small>11 / 2026</div>
+        <div><small><span lang="fr">Rév.</span><span lang="en">Rev.</span></small>C</div>
+        <div><small><span lang="fr">Échelle</span><span lang="en">Scale</span></small>1:1</div>
+        <div><small><span lang="fr">Langue</span><span lang="en">Language</span></small><span lang="fr">FR</span><span lang="en">EN</span></div>
+        <div><small>Folio</small>01 / 01</div>
+    </div>
+    <a href="#top"><span lang="fr">Haut de page ↑</span><span lang="en">Back to top ↑</span></a>
 </footer>
-
-<script src="script.js" defer></script>
-
 
 </body>
 </html>
